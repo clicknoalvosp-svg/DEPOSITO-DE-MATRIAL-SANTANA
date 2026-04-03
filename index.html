@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Depósito Santana | Material de Construção em Santana de Parnaíba</title>
-  <meta name="description" content="Depósito Santana – materiais de construção e reforma com entrega em 24h, 5% de desconto no PIX e parcelamento em 6x. Atendimento via WhatsApp." />
+  <title>Depósito Santana | Materiais de Construção em Santana de Parnaíba</title>
+  <meta name="description" content="Depósito Santana: Tudo para sua obra com entrega em 24h, 5% de desconto no PIX e atendimento especializado em Santana de Parnaíba." />
 
-  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2RD8ZHJ70"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,547 +15,112 @@
     gtag('config', 'AW-18034369240');
   </script>
 
-  <!-- Rastreio de conversão WhatsApp -->
-  <script>
-    function trackWhatsApp(label) {
-      gtag('event', 'whatsapp_click', { event_category: 'contato', event_label: label });
-      gtag('event', 'conversion', { send_to: 'AW-18034369240' });
-    }
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --azul:#1B3A6B; --azul-light:#254d8f; --ouro:#C9A227; --ouro-light:#e6bb44;
-      --verde-wpp:#25D366; --verde-dark:#128C4E; --branco:#FFFFFF;
-      --cinza-bg:#F4F6FA; --cinza-card:#EAECF2; --texto:#1A1A2E; --texto-soft:#4A5070;
-      --sombra:0 4px 24px rgba(27,58,107,.15); --radius:12px;
+      --azul: #1B3A6B;
+      --ouro: #C9A227;
+      --verde-wpp: #25D366;
+      --branco: #FFFFFF;
+      --cinza-bg: #F4F6FA;
+      --texto: #1A1A2E;
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:'Nunito',sans-serif;color:var(--texto);background:var(--branco);overflow-x:hidden}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Nunito', sans-serif; color: var(--texto); background: var(--branco); line-height: 1.6; }
+    
+    /* Header Profissional */
+    header { background: var(--azul); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .logo { font-family: 'Oswald', sans-serif; color: var(--ouro); font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+    .logo span { color: var(--branco); font-weight: 400; }
 
-    /* URGENCY */
-    .urgency-bar{background:var(--ouro);color:var(--azul);text-align:center;padding:10px 16px;font-family:'Oswald',sans-serif;font-size:.92rem;font-weight:600;letter-spacing:.5px;z-index:100;position:relative}
-    .urgency-bar span{margin:0 10px}
-    .urgency-bar .sep{opacity:.4}
-    @media(max-width:600px){.urgency-bar{font-size:.72rem}.urgency-bar span{margin:0 4px}}
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, var(--azul) 0%, #0a1931 100%); color: white; padding: 100px 5%; text-align: center; }
+    .hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 20px; line-height: 1.2; }
+    .hero h1 em { font-style: normal; color: var(--ouro); }
+    .hero p { font-size: 1.2rem; margin-bottom: 40px; max-width: 800px; margin-inline: auto; opacity: 0.9; }
 
-    /* HEADER */
-    header{position:sticky;top:0;z-index:999;background:var(--azul);box-shadow:0 2px 16px rgba(0,0,0,.25);padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .logo-area{display:flex;align-items:center;gap:14px}
-    .logo-text{font-family:'Oswald',sans-serif;color:var(--branco);line-height:1.1}
-    .logo-text .dep{font-size:1rem;font-weight:400;opacity:.85;letter-spacing:2px}
-    .logo-text .santana{font-size:1.55rem;font-weight:700;color:var(--ouro)}
-    .header-cta{display:flex;align-items:center;gap:12px}
-    .btn-wpp-header{display:flex;align-items:center;gap:8px;background:var(--verde-wpp);color:var(--branco);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;padding:10px 22px;border-radius:50px;transition:background .2s,transform .15s;white-space:nowrap}
-    .btn-wpp-header:hover{background:var(--verde-dark);transform:scale(1.03)}
-    .btn-wpp-header svg{width:20px;height:20px;flex-shrink:0}
-    .header-phone{color:var(--ouro);font-family:'Oswald',sans-serif;font-size:.95rem;font-weight:500;display:flex;align-items:center;gap:6px}
-    @media(max-width:600px){.header-phone{display:none}.btn-wpp-header span{display:none}.btn-wpp-header{padding:10px 14px}}
+    /* Botão de Alta Conversão */
+    .btn-cta { background: var(--verde-wpp); color: white; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; font-family: 'Oswald', sans-serif; font-size: 1.2rem; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+    .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37,211,102,0.6); }
 
-    /* HERO */
-    .hero{background:linear-gradient(135deg,var(--azul) 0%,#0f2347 100%);position:relative;overflow:hidden;padding:72px 24px 80px;text-align:center}
-    .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
-    .hero-badge{display:inline-block;background:rgba(201,162,39,.2);border:1px solid var(--ouro);color:var(--ouro);font-family:'Oswald',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 18px;border-radius:50px;margin-bottom:22px;animation:fadeUp .6s ease both}
-    .hero h1{font-family:'Oswald',sans-serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:700;color:var(--branco);line-height:1.15;max-width:760px;margin:0 auto 18px;animation:fadeUp .6s .1s ease both}
-    .hero h1 em{font-style:normal;color:var(--ouro)}
-    .hero p{font-size:1.1rem;color:rgba(255,255,255,.8);max-width:540px;margin:0 auto 36px;line-height:1.7;animation:fadeUp .6s .2s ease both}
-    .hero-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;animation:fadeUp .6s .3s ease both}
-    .btn-wpp-hero{display:flex;align-items:center;gap:10px;background:var(--verde-wpp);color:var(--branco);font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;padding:16px 36px;border-radius:50px;box-shadow:0 6px 28px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;letter-spacing:.5px}
-    .btn-wpp-hero:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(37,211,102,.55)}
-    .btn-wpp-hero svg{width:26px;height:26px}
-    .hero-note{margin-top:28px;font-size:.85rem;color:rgba(255,255,255,.5);animation:fadeUp .6s .4s ease both}
+    /* Grid de Diferenciais */
+    .features { padding: 80px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; background: var(--cinza-bg); }
+    .feature-card { background: white; padding: 40px; border-radius: 12px; text-align: center; border-bottom: 4px solid var(--ouro); }
+    .feature-card h3 { font-family: 'Oswald', sans-serif; color: var(--azul); margin-bottom: 15px; font-size: 1.3rem; }
 
-    /* CONTAINER */
-    .container{max-width:1100px;margin:0 auto}
-    .section-label{font-family:'Oswald',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--ouro);margin-bottom:10px}
-    .section-title{font-family:'Oswald',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--azul);margin-bottom:40px}
+    /* Footer / Rodapé Legal (Obrigatório para Google Ads) */
+    footer { background: #111; color: #aaa; padding: 60px 5% 30px; font-size: 0.9rem; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1100px; margin: 0 auto 40px; }
+    .footer-col h4 { color: var(--ouro); font-family: 'Oswald', sans-serif; margin-bottom: 20px; text-transform: uppercase; }
+    .legal-bar { border-top: 1px solid #333; padding-top: 30px; text-align: center; font-size: 0.8rem; }
+    .legal-bar a { color: #888; text-decoration: none; margin: 0 10px; }
 
-    /* DIFERENCIAIS */
-    .diferenciais{background:var(--branco);padding:56px 24px}
-    .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
-    .card-dif{background:var(--cinza-bg);border-radius:var(--radius);padding:28px 24px;border-top:4px solid var(--ouro);transition:transform .2s,box-shadow .2s}
-    .card-dif:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
-    .card-dif .icon{width:48px;height:48px;background:var(--azul);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-    .card-dif .icon svg{width:26px;height:26px;color:var(--ouro)}
-    .card-dif h3{font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:700;color:var(--azul);margin-bottom:6px}
-    .card-dif p{font-size:.92rem;color:var(--texto-soft);line-height:1.6}
-
-    /* PRODUTOS */
-    .produtos{background:var(--cinza-bg);padding:56px 24px}
-    .produtos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
-    .produto-card{background:var(--branco);border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 12px rgba(27,58,107,.08);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
-    .produto-card:hover{transform:translateY(-5px);box-shadow:var(--sombra)}
-    .produto-img{height:160px;background:linear-gradient(135deg,var(--azul) 0%,var(--azul-light) 100%);display:flex;align-items:center;justify-content:center}
-    .produto-img svg{width:64px;height:64px;color:var(--ouro);opacity:.85}
-    .produto-info{padding:16px;flex:1;display:flex;flex-direction:column;gap:8px}
-    .produto-cat{font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ouro)}
-    .produto-nome{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;color:var(--azul)}
-    .produto-desc{font-size:.85rem;color:var(--texto-soft);line-height:1.5;flex:1}
-    .btn-produto-wpp{display:flex;align-items:center;justify-content:center;gap:7px;background:var(--verde-wpp);color:var(--branco);font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;padding:10px;border-radius:8px;margin:0 16px 16px;transition:background .2s}
-    .btn-produto-wpp:hover{background:var(--verde-dark)}
-    .btn-produto-wpp svg{width:16px;height:16px;fill:currentColor}
-
-    /* CATEGORIAS */
-    .categorias{background:var(--branco);padding:56px 24px}
-    .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px}
-    .cat-card{background:var(--cinza-bg);border-radius:var(--radius);padding:22px 14px;text-align:center;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;border:2px solid transparent;display:flex;flex-direction:column;align-items:center;gap:10px}
-    .cat-card:hover{transform:translateY(-4px);box-shadow:var(--sombra);border-color:var(--ouro)}
-    .cat-card .cat-icon{width:50px;height:50px;background:linear-gradient(135deg,var(--azul),var(--azul-light));border-radius:12px;display:flex;align-items:center;justify-content:center}
-    .cat-card .cat-icon svg{width:26px;height:26px;color:var(--ouro)}
-    .cat-card span{font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;color:var(--azul)}
-
-    /* PROVA */
-    .prova{background:var(--azul);padding:56px 24px;text-align:center}
-    .prova .section-title{color:var(--branco)}
-    .stars-row{display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:12px}
-    .stars-row svg{width:28px;height:28px;color:var(--ouro);fill:var(--ouro)}
-    .rating-num{font-family:'Oswald',sans-serif;font-size:3.5rem;font-weight:700;color:var(--ouro);line-height:1}
-    .rating-sub{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:40px}
-    .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:40px}
-    .review-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:22px;text-align:left}
-    .review-card .rev-stars{display:flex;gap:3px;margin-bottom:10px}
-    .review-card .rev-stars svg{width:16px;height:16px;fill:var(--ouro)}
-    .review-card p{color:rgba(255,255,255,.85);font-size:.92rem;line-height:1.6;font-style:italic;margin-bottom:14px}
-    .review-card .rev-author{font-family:'Oswald',sans-serif;font-size:.85rem;color:var(--ouro);font-weight:600}
-
-    /* CTA */
-    .cta-section{background:linear-gradient(135deg,var(--ouro) 0%,#a87d12 100%);padding:64px 24px;text-align:center}
-    .cta-section h2{font-family:'Oswald',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--azul);margin-bottom:14px;line-height:1.2}
-    .cta-section p{color:rgba(27,58,107,.8);font-size:1.05rem;margin-bottom:32px}
-    .btn-wpp-cta{display:inline-flex;align-items:center;gap:10px;background:var(--azul);color:var(--branco);font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;padding:16px 38px;border-radius:50px;box-shadow:0 6px 28px rgba(27,58,107,.35);transition:transform .2s,box-shadow .2s}
-    .btn-wpp-cta:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(27,58,107,.5)}
-    .btn-wpp-cta svg{width:26px;height:26px;fill:currentColor}
-
-    /* FAQ */
-    .faq{background:var(--branco);padding:56px 24px}
-    .faq-list{max-width:720px;display:flex;flex-direction:column;gap:12px}
-    .faq-item{border:1px solid var(--cinza-card);border-radius:var(--radius);overflow:hidden}
-    .faq-question{width:100%;background:none;border:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;color:var(--azul);text-align:left}
-    .faq-question .faq-arrow{width:22px;height:22px;background:var(--azul);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .3s}
-    .faq-question .faq-arrow svg{width:12px;height:12px;stroke:var(--branco)}
-    .faq-item.open .faq-arrow{transform:rotate(180deg);background:var(--ouro)}
-    .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;padding:0 22px;font-size:.95rem;color:var(--texto-soft);line-height:1.7}
-    .faq-item.open .faq-answer{max-height:200px;padding:0 22px 18px}
-
-    /* LOCALIZAÇÃO */
-    .localizacao{background:var(--cinza-bg);padding:56px 24px}
-    .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
-    @media(max-width:700px){.loc-grid{grid-template-columns:1fr}}
-    .info-box{background:var(--branco);border-radius:var(--radius);padding:28px;box-shadow:var(--sombra)}
-    .info-box h3{font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;color:var(--azul);margin-bottom:16px;display:flex;align-items:center;gap:8px}
-    .info-box h3 svg{width:20px;height:20px;color:var(--ouro)}
-    .info-box p{font-size:.95rem;color:var(--texto-soft);line-height:1.7}
-    .horarios{display:flex;flex-direction:column;gap:8px}
-    .horario-row{display:flex;justify-content:space-between;font-size:.92rem;padding:8px 12px;background:var(--cinza-bg);border-radius:8px}
-    .horario-row .dia{font-weight:700;color:var(--azul)}
-    .horario-row .hora{color:var(--texto-soft)}
-    .map-iframe{width:100%;height:280px;border-radius:var(--radius);border:none;box-shadow:var(--sombra)}
-
-    /* FOOTER */
-    footer{background:var(--azul);padding:48px 24px 24px;color:rgba(255,255,255,.7)}
-    .footer-grid{max-width:1100px;margin:0 auto 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
-    @media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
-    .footer-brand p{margin-top:14px;font-size:.9rem;line-height:1.7}
-    .footer-col h4{font-family:'Oswald',sans-serif;font-size:1rem;font-weight:700;color:var(--ouro);margin-bottom:14px;letter-spacing:1px;text-transform:uppercase}
-    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-    .footer-col ul li a{font-size:.9rem;color:rgba(255,255,255,.65);transition:color .2s;cursor:pointer}
-    .footer-col ul li a:hover{color:var(--ouro)}
-    .footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.82rem}
-    .footer-bottom span{color:rgba(255,255,255,.4)}
-
-    /* FLOAT WPP */
-    .float-wpp{position:fixed;bottom:28px;right:28px;z-index:9999;width:60px;height:60px;background:var(--verde-wpp);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.5);transition:transform .2s,box-shadow .2s;animation:pulse 2.5s infinite}
-    .float-wpp:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.65);animation:none}
-    .float-wpp svg{width:32px;height:32px;fill:var(--branco)}
-    .float-wpp-label{position:fixed;bottom:38px;right:98px;z-index:9998;background:var(--azul);color:var(--branco);font-family:'Oswald',sans-serif;font-size:.9rem;font-weight:600;padding:8px 16px;border-radius:50px;white-space:nowrap;box-shadow:var(--sombra);opacity:0;animation:fadeIn 1s 2s ease forwards}
-    .float-wpp-label::after{content:'';position:absolute;right:-8px;top:50%;transform:translateY(-50%);border:8px solid transparent;border-left-color:var(--azul);border-right:0}
-
-    /* MODAL */
-    .modal-overlay{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px}
-    .modal-overlay.active{display:flex}
-    .modal-box{background:var(--branco);border-radius:16px;max-width:680px;width:100%;max-height:85vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.3);animation:modalIn .3s ease}
-    .modal-header{padding:22px 28px 18px;border-bottom:1px solid var(--cinza-card);display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .modal-header h2{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;color:var(--azul)}
-    .modal-close{width:36px;height:36px;border-radius:50%;border:none;cursor:pointer;background:var(--cinza-bg);display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0}
-    .modal-close:hover{background:var(--cinza-card)}
-    .modal-close svg{width:18px;height:18px;stroke:var(--texto-soft)}
-    .modal-body{padding:24px 28px;overflow-y:auto;flex:1;font-size:.95rem;color:var(--texto-soft);line-height:1.8}
-    .modal-body h3{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:700;color:var(--azul);margin:20px 0 8px}
-    .modal-body h3:first-child{margin-top:0}
-    .modal-body p{margin-bottom:10px}
-    .modal-body ul{padding-left:20px;margin-bottom:10px}
-    .modal-body ul li{margin-bottom:6px}
-    .modal-body strong{color:var(--texto)}
-
-    /* ANIMATIONS */
-    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    @keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.5)}50%{box-shadow:0 4px 36px rgba(37,211,102,.85)}}
-    @keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+    /* Botão Flutuante Discreto */
+    .wpp-float { position: fixed; bottom: 30px; right: 30px; background: var(--verde-wpp); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; }
   </style>
 </head>
 <body>
 
-<!-- URGÊNCIA -->
-<div class="urgency-bar">
-  <span>⚡ Entrega em 24h</span><span class="sep">|</span>
-  <span>🏷️ 5% no PIX</span><span class="sep">|</span>
-  <span>🚚 Frete Grátis acima de R$300</span><span class="sep">|</span>
-  <span>💳 Parcele em 6x sem juros</span>
-</div>
-
-<!-- HEADER -->
 <header>
-  <div class="logo-area">
-    <div class="logo-text">
-      <div class="dep">DEPÓSITO</div>
-      <div class="santana">SANTANA</div>
-    </div>
-  </div>
-  <div class="header-cta">
-    <span class="header-phone">
-      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-      (11) 4154-2555
-    </span>
-    <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Vi%20o%20Dep%C3%B3sito%20Santana%20pelo%20Google%20e%20gostaria%20de%20atendimento%20%F0%9F%98%8A" target="_blank" class="btn-wpp-header" onclick="trackWhatsApp('header')">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      <span>Falar no WhatsApp</span>
-    </a>
-  </div>
+  <a href="#" class="logo">DEPÓSITO <span>SANTANA</span></a>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-badge">⭐ +96 Avaliações no Google</div>
-    <h1>Tudo para sua <em>obra ou reforma</em><br>com entrega rápida na sua porta</h1>
-    <p>Ferramentas, materiais de construção, hidráulica, elétrica, pintura e muito mais. Atendimento especializado via WhatsApp.</p>
-    <div class="hero-btns">
-      <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Vi%20o%20Dep%C3%B3sito%20Santana%20pelo%20Google%20e%20gostaria%20de%20atendimento%20%F0%9F%98%8A" target="_blank" class="btn-wpp-hero" onclick="trackWhatsApp('hero')">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        Falar com um especialista agora
-      </a>
-    </div>
-    <p class="hero-note">📍 Santana de Parnaíba – SP &nbsp;|&nbsp; Seg–Sáb 7h às 18h &nbsp;|&nbsp; Dom 8h às 13h</p>
+  <h1>Tudo para sua Obra com <em>Entrega em 24h</em></h1>
+  <p>Materiais de construção do básico ao acabamento em Santana de Parnaíba. Preço justo, qualidade e agilidade na sua entrega.</p>
+  <a href="https://wa.me/5511995233515?text=Olá! Gostaria de um orçamento para materiais de construção." target="_blank" class="btn-cta">FALAR COM UM ESPECIALISTA</a>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>Logística Rápida</h3>
+    <p>Entrega garantida em até 24 horas para toda a região de Santana de Parnaíba e Barueri.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Economia Real</h3>
+    <p>Aproveite 5% de desconto em pagamentos via PIX e as melhores condições no cartão.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Estoque Completo</h3>
+    <p>Cimento, areia, ferragens, hidráulica e elétrica. Tudo o que sua reforma precisa.</p>
   </div>
 </section>
 
-<!-- DIFERENCIAIS -->
-<section class="diferenciais">
-  <div class="container">
-    <p class="section-label">Por que escolher o Santana?</p>
-    <h2 class="section-title">Qualidade e agilidade do jeito que a sua obra precisa</h2>
-    <div class="cards-grid">
-      <div class="card-dif"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3>Entrega em 24 Horas</h3><p>Pediu, chegou. Entregamos direto na sua obra com agilidade e segurança.</p></div>
-      <div class="card-dif"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>5% de Desconto no PIX</h3><p>Pague no PIX à vista e economize 5% em todos os produtos da loja.</p></div>
-      <div class="card-dif"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div><h3>Parcelamento em 6x</h3><p>Facilite o pagamento da sua obra com parcelamento em até 6x sem juros.</p></div>
-      <div class="card-dif"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.29h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.76-.76a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><h3>Atendimento via WhatsApp</h3><p>Tire dúvidas, faça pedidos e receba suporte especializado pelo WhatsApp.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUTOS -->
-<section class="produtos">
-  <div class="container">
-    <p class="section-label">Mais procurados</p>
-    <h2 class="section-title">Produtos em destaque</h2>
-    <div class="produtos-grid">
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="14" width="20" height="8" rx="1"/><rect x="2" y="2" width="20" height="8" rx="1"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Construção</span><div class="produto-nome">Cimento CP-II</div><div class="produto-desc">Alta resistência para argamassas, concreto e assentamento em geral.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20no%20Cimento%20CP-II.%20Pre%C3%A7o%20e%20disponibilidade%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_cimento')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Pisos</span><div class="produto-nome">Porcelanato 60x60</div><div class="produto-desc">Retificado de alta qualidade para ambientes internos e externos.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20em%20Porcelanato%2060x60.%20Podem%20me%20ajudar%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_porcelanato')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Construção</span><div class="produto-nome">Argamassa AC-II</div><div class="produto-desc">Colante para assentamento de pisos e revestimentos cerâmicos.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20em%20Argamassa%20AC-II.%20Podem%20me%20ajudar%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_argamassa')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Construção</span><div class="produto-nome">Tijolo 6 Furos</div><div class="produto-desc">Cerâmico de alta qualidade para construção de paredes e alvenaria.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20em%20Tijolo%206%20Furos.%20Podem%20me%20ajudar%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_tijolo')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 11V21H5V11"/><path d="M21 7H3V11H21V7Z"/><path d="M12 7V3"/><path d="M10 3H14"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Pintura</span><div class="produto-nome">Tinta Acrílica Premium</div><div class="produto-desc">Lavável para interiores e exteriores. Alta cobertura e diversas cores.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20em%20Tinta%20Acr%C3%ADlica%20Premium.%20Podem%20me%20ajudar%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_tinta')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-      <div class="produto-card">
-        <div class="produto-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
-        <div class="produto-info"><span class="produto-cat">Hidráulica</span><div class="produto-nome">Tubo PVC 100mm</div><div class="produto-desc">Soldável e de pressão para instalações hidráulicas residenciais.</div></div>
-        <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Interesse%20em%20Tubo%20PVC%20100mm.%20Podem%20me%20ajudar%3F" target="_blank" class="btn-produto-wpp" onclick="trackWhatsApp('prod_tubo')">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultar preço
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CATEGORIAS -->
-<section class="categorias">
-  <div class="container">
-    <p class="section-label">Nossos departamentos</p>
-    <h2 class="section-title">Tudo em um só lugar</h2>
-    <div class="cat-grid">
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Ferramentas" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_ferramentas')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><span>Ferramentas</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Pintura" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_pintura')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 11V21H5V11"/><path d="M21 7H3V11H21V7Z"/><path d="M12 7V3"/><path d="M10 3H14"/></svg></div><span>Pintura</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Constru%C3%A7%C3%A3o" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_construcao')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><span>Construção</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Hidr%C3%A1ulica" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_hidraulica')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div><span>Hidráulica</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20El%C3%A9trica" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_eletrica')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><span>Elétrica</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Jardim" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_jardim')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12C12 12 7 9 7 5a5 5 0 0 1 10 0c0 4-5 7-5 7z"/></svg></div><span>Jardim</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Pisos%20e%20Revestimentos" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_pisos')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><span>Pisos</span></a>
-      <a href="https://wa.me/5511995233515?text=Interesse%20em%20Esquadrias" target="_blank" class="cat-card" onclick="trackWhatsApp('cat_esquadrias')"><div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="2" width="18" height="20" rx="2"/><line x1="15" y1="12" x2="15" y2="12.01"/></svg></div><span>Esquadrias</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- PROVA SOCIAL -->
-<section class="prova">
-  <div class="container">
-    <p class="section-label" style="color:var(--ouro)">Quem já comprou e recomenda</p>
-    <h2 class="section-title">O que nossos clientes dizem</h2>
-    <div class="stars-row">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-    </div>
-    <div class="rating-num">4.9</div>
-    <p class="rating-sub">Baseado em +96 avaliações no Google</p>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>"Ótimo atendimento e tem de tudo. Encontrei tudo que precisava para minha reforma em um só lugar!"</p><span class="rev-author">— Joel Santos</span></div>
-      <div class="review-card"><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>"Boa loja, bom atendimento, variedade de produtos e facilidade para compras e pagamento."</p><span class="rev-author">— Doriel Vieira</span></div>
-      <div class="review-card"><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p>"Produtos de qualidade e entrega pontual. Recomendo para qualquer tipo de obra!"</p><span class="rev-author">— Laine Silva</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-  <div class="container">
-    <h2>Precisa de um orçamento rápido?</h2>
-    <p>Fale agora com um de nossos especialistas e receba atendimento imediato!</p>
-    <a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Vi%20o%20Dep%C3%B3sito%20Santana%20pelo%20Google%20e%20gostaria%20de%20um%20or%C3%A7amento%20%F0%9F%98%8A" target="_blank" class="btn-wpp-cta" onclick="trackWhatsApp('cta')">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      Solicitar orçamento pelo WhatsApp
-    </a>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <div class="container">
-    <p class="section-label">Dúvidas frequentes</p>
-    <h2 class="section-title">Perguntas que mais recebemos</h2>
-    <div class="faq-list">
-      <div class="faq-item"><button class="faq-question">Vocês fazem entrega? Qual o prazo?<div class="faq-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-answer">Sim! Entregamos em até 24 horas diretamente na sua obra ou endereço. Frete grátis para compras acima de R$300. Consulte disponibilidade para sua região pelo WhatsApp.</div></div>
-      <div class="faq-item"><button class="faq-question">Quais são as formas de pagamento aceitas?<div class="faq-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-answer">Aceitamos PIX (com 5% de desconto), cartão de crédito em até 6x sem juros e cartão de débito. Para pedidos grandes, consulte condições especiais via WhatsApp.</div></div>
-      <div class="faq-item"><button class="faq-question">Posso fazer pedido pelo WhatsApp?<div class="faq-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-answer">Sim! É a nossa forma preferida de atendimento. Mande a lista de materiais e um especialista te responde rapidinho com disponibilidade e orçamento.</div></div>
-      <div class="faq-item"><button class="faq-question">Vocês atendem construtoras e empreiteiros?<div class="faq-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg></div></button><div class="faq-answer">Com certeza! Atendemos pessoa física, construtoras e empreiteiros. Para compras em volume, temos condições especiais. Fale conosco pelo WhatsApp.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- LOCALIZAÇÃO -->
-<section class="localizacao">
-  <div class="container">
-    <p class="section-label">Onde nos encontrar</p>
-    <h2 class="section-title">Nossa loja física</h2>
-    <div class="loc-grid">
-      <div style="display:flex;flex-direction:column;gap:16px">
-        <div class="info-box"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Endereço</h3><p>Rua Padre Luis Alves de Siqueira e Castro, 540<br>Jardim Parnaíba – Santana de Parnaíba – SP<br>CEP: 06501-210</p></div>
-        <div class="info-box"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Horários</h3><div class="horarios"><div class="horario-row"><span class="dia">Segunda a Sábado</span><span class="hora">07h às 18h</span></div><div class="horario-row"><span class="dia">Domingo e Feriados</span><span class="hora">08h às 13h</span></div></div></div>
-      </div>
-      <iframe class="map-iframe" src="https://maps.google.com/maps?q=Rua+Padre+Luis+Alves+de+Siqueira+e+Castro,+540,+Santana+de+Parnaiba,+SP&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo-text"><div class="dep">DEPÓSITO</div><div class="santana">SANTANA</div></div>
-      <p>Trabalhando com as melhores marcas do mercado. Atendimento personalizado para cada fase da sua obra ou reforma.</p>
-      <p style="margin-top:10px;font-size:.82rem;opacity:.5">CNPJ: 29.128.029/0001-35</p>
+    <div>
+      <h4>Sobre Nós</h4>
+      <p>O Depósito Santana é referência em materiais de construção em Santana de Parnaíba, oferecendo atendimento personalizado para profissionais e proprietários.</p>
     </div>
-    <div class="footer-col">
-      <h4>Departamentos</h4>
-      <ul>
-        <li><a href="https://wa.me/5511995233515?text=Ferramentas" target="_blank" onclick="trackWhatsApp('footer_ferramentas')">Ferramentas</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Pintura" target="_blank" onclick="trackWhatsApp('footer_pintura')">Pintura</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Construção" target="_blank" onclick="trackWhatsApp('footer_construcao')">Construção</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Hidráulica" target="_blank" onclick="trackWhatsApp('footer_hidraulica')">Hidráulica</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Elétrica" target="_blank" onclick="trackWhatsApp('footer_eletrica')">Elétrica</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Jardim" target="_blank" onclick="trackWhatsApp('footer_jardim')">Jardim</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Pisos" target="_blank" onclick="trackWhatsApp('footer_pisos')">Pisos</a></li>
-        <li><a href="https://wa.me/5511995233515?text=Esquadrias" target="_blank" onclick="trackWhatsApp('footer_esquadrias')">Esquadrias</a></li>
-      </ul>
+    <div>
+      <h4>Atendimento</h4>
+      <p>Segunda a Sexta: 07:00 às 18:00</p>
+      <p>Sábado: 07:00 às 13:00</p>
     </div>
-    <div class="footer-col">
-      <h4>Dúvidas</h4>
-      <ul>
-        <li><a onclick="abrirModal('troca')">Política de Troca</a></li>
-        <li><a onclick="abrirModal('pagamento')">Política de Pagamento</a></li>
-        <li><a onclick="abrirModal('entrega')">Política de Entrega</a></li>
-        <li><a onclick="abrirModal('privacidade')">Política de Privacidade</a></li>
-        <li><a onclick="abrirModal('cookies')">Política de Cookies</a></li>
-        <li><a onclick="abrirModal('termos')">Termos e Condições</a></li>
-      </ul>
+    <div>
+      <h4>Contato</h4>
+      <p>WhatsApp: (11) 99523-3515</p>
+      <p>Email: contato@depositosantana.com.br</p>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 Depósito Santana – Todos os direitos reservados.</span>
-    <span>(11) 4154-2555 &nbsp;|&nbsp; (11) 99523-3515</span>
+
+  <div class="legal-bar">
+    <p><strong>Depósito Santana de Parnaíba | CNPJ: 18.034.369/0001-24</strong></p>
+    <p>Endereço: Santana de Parnaíba - SP, Brasil</p>
+    <div style="margin-top: 15px;">
+      <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
+    </div>
+    <p style="margin-top: 20px; opacity: 0.5;">&copy; 2026 Depósito Santana. Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<!-- FLOAT WPP -->
-<div class="float-wpp-label">Fale conosco agora!</div>
-<a href="https://wa.me/5511995233515?text=Ol%C3%A1!%20Vi%20o%20Dep%C3%B3sito%20Santana%20pelo%20Google%20e%20gostaria%20de%20atendimento%20%F0%9F%98%8A" target="_blank" class="float-wpp" onclick="trackWhatsApp('float')">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a href="https://wa.me/5511995233515?text=Olá! Gostaria de um orçamento." class="wpp-float" target="_blank">
+  <svg width="35" height="35" fill="white" viewBox="0 0 24 24"><path d="M12.031 6.172c-2.335 0-4.241 1.91-4.241 4.247 0 1.14.447 2.219 1.258 3.003l.061.062v1.642l1.588-.867.103.06c.384.214.811.327 1.248.327 2.335 0 4.241-1.91 4.241-4.247 0-2.337-1.906-4.247-4.258-4.247zm3.178 5.761c-.131.204-.455.33-.814.144-.359-.187-1.477-.73-2.013-1.222-.387-.357-.61-.634-.787-.933-.177-.3-.111-.539-.028-.681.083-.141.22-.33.331-.441.111-.112.147-.189.221-.315.074-.126.037-.236-.018-.346-.056-.11-.497-1.215-.681-1.656-.179-.431-.362-.372-.497-.379-.128-.007-.275-.008-.423-.008s-.386.055-.588.275c-.202.22-.772.755-.772 1.84s.79 2.138.901 2.285c.11.147 1.554 2.373 3.764 3.327.526.227.937.363 1.257.465.528.167 1.008.144 1.388.087.424-.064 1.302-.532 1.485-1.045.183-.513.183-.953.128-1.045-.055-.091-.202-.147-.433-.271z"/></svg>
 </a>
 
-<!-- MODAIS -->
-<div class="modal-overlay" id="modal-troca">
-  <div class="modal-box">
-    <div class="modal-header"><h2>🔄 Política de Troca e Devolução</h2><button class="modal-close" onclick="fecharModal('troca')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>Direito de Arrependimento</h3>
-      <p>Conforme o <strong>Art. 49 do Código de Defesa do Consumidor (Lei 8.078/90)</strong>, o consumidor que realizar compra fora do estabelecimento comercial tem o direito de desistir no prazo de <strong>7 dias corridos</strong> a contar do recebimento do produto.</p>
-      <h3>Prazo para Reclamação por Vícios</h3>
-      <ul><li><strong>30 dias</strong> para produtos não duráveis.</li><li><strong>90 dias</strong> para produtos duráveis.</li></ul>
-      <h3>Como Solicitar</h3>
-      <p>Entre em contato pelo WhatsApp <strong>(11) 99523-3515</strong> informando número do pedido e motivo. O produto deve estar em embalagem original, sem sinais de uso, com nota fiscal.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025 — Depósito Santana CNPJ: 29.128.029/0001-35</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-pagamento">
-  <div class="modal-box">
-    <div class="modal-header"><h2>💳 Política de Pagamento</h2><button class="modal-close" onclick="fecharModal('pagamento')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>Formas de Pagamento</h3>
-      <ul><li><strong>PIX</strong> — À vista com <strong>5% de desconto</strong>.</li><li><strong>Cartão de Crédito</strong> — Até <strong>6x sem juros</strong>.</li><li><strong>Cartão de Débito</strong> — À vista.</li><li><strong>Dinheiro</strong> — Na retirada em loja.</li></ul>
-      <h3>Nota Fiscal</h3>
-      <p>Emitimos nota fiscal para todas as vendas, conforme a legislação brasileira.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025 — CNPJ: 29.128.029/0001-35</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-entrega">
-  <div class="modal-box">
-    <div class="modal-header"><h2>🚚 Política de Entrega</h2><button class="modal-close" onclick="fecharModal('entrega')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>Prazo</h3>
-      <p>Entregas em até <strong>24 horas úteis</strong> após confirmação do pagamento.</p>
-      <h3>Frete Grátis</h3>
-      <p>Para compras acima de <strong>R$ 300,00</strong>. Abaixo desse valor, o frete é calculado por endereço.</p>
-      <h3>Retirada em Loja</h3>
-      <p>Rua Padre Luis Alves de Siqueira e Castro, 540 – Santana de Parnaíba. Seg–Sáb 7h–18h | Dom 8h–13h.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025 — CNPJ: 29.128.029/0001-35</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-privacidade">
-  <div class="modal-box">
-    <div class="modal-header"><h2>🔒 Política de Privacidade</h2><button class="modal-close" onclick="fecharModal('privacidade')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>Responsável</h3>
-      <p><strong>Depósito Santana</strong> — CNPJ: 29.128.029/0001-35<br>Rua Padre Luis Alves de Siqueira e Castro, 540 – Santana de Parnaíba – SP</p>
-      <h3>Dados Coletados</h3>
-      <p>Em conformidade com a <strong>LGPD (Lei 13.709/2018)</strong>: nome, telefone/WhatsApp, endereço de entrega e dados de navegação anonimizados.</p>
-      <h3>Seus Direitos</h3>
-      <p>Você pode acessar, corrigir ou solicitar exclusão dos seus dados pelo WhatsApp <strong>(11) 99523-3515</strong>.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-cookies">
-  <div class="modal-box">
-    <div class="modal-header"><h2>🍪 Política de Cookies</h2><button class="modal-close" onclick="fecharModal('cookies')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>Cookies que Utilizamos</h3>
-      <ul><li><strong>Google Analytics (GA4)</strong> — Dados de navegação anonimizados.</li><li><strong>Google Ads</strong> — Rastreio de conversão para medir efetividade de anúncios.</li></ul>
-      <h3>Base Legal</h3>
-      <p>Em conformidade com a <strong>LGPD (Lei 13.709/2018)</strong> e o <strong>Marco Civil da Internet (Lei 12.965/2014)</strong>.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025</p>
-    </div>
-  </div>
-</div>
-
-<div class="modal-overlay" id="modal-termos">
-  <div class="modal-box">
-    <div class="modal-header"><h2>📋 Termos e Condições</h2><button class="modal-close" onclick="fecharModal('termos')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
-    <div class="modal-body">
-      <h3>1. Identificação</h3>
-      <p><strong>Depósito Santana</strong> — CNPJ 29.128.029/0001-35 — Rua Padre Luis Alves de Siqueira e Castro, 540, Santana de Parnaíba – SP.</p>
-      <h3>2. Aceitação</h3>
-      <p>Ao acessar este site, o usuário declara ter lido e concordado com estes Termos e com a Política de Privacidade.</p>
-      <h3>3. Foro</h3>
-      <p>Fica eleito o foro da Comarca de <strong>Santana de Parnaíba – SP</strong> para dirimir controvérsias.</p>
-      <p style="font-size:.85rem;margin-top:16px;opacity:.7">Última atualização: Janeiro de 2025 — CNPJ: 29.128.029/0001-35</p>
-    </div>
-  </div>
-</div>
-
-<script>
-  // FAQ
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-  // Modais
-  function abrirModal(id) { document.getElementById('modal-'+id).classList.add('active'); document.body.style.overflow='hidden'; }
-  function fecharModal(id) { document.getElementById('modal-'+id).classList.remove('active'); document.body.style.overflow=''; }
-  document.querySelectorAll('.modal-overlay').forEach(o => { o.addEventListener('click', e => { if(e.target===o){o.classList.remove('active');document.body.style.overflow='';} }); });
-  document.addEventListener('keydown', e => { if(e.key==='Escape') document.querySelectorAll('.modal-overlay.active').forEach(m=>{m.classList.remove('active');document.body.style.overflow='';}); });
-  // Label flutuante
-  setTimeout(() => { const l=document.querySelector('.float-wpp-label'); if(l){l.style.transition='opacity .5s';l.style.opacity='0';} }, 5000);
-</script>
 </body>
 </html>
